@@ -1,0 +1,218 @@
+/* INIZIALIZZAZIONE */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* HELPER */
+.border {
+  border: 1px solid #EEECEC;
+  border-left: none;
+}
+.container {
+  background-color: #EEECEC;
+  width: 95vw;
+  min-width: 900px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.button {
+  color: white;
+  background-color: #D8020C;
+  cursor: pointer;
+}
+.button:hover {
+  color: #D8020C;
+  background-color: #FFFFFF;
+}
+/* GENERAL */
+div#general-container {
+  min-width: 920px;
+  font-family: 'Roboto', sans-serif;
+}
+header, main, footer {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+span, h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+h1 {
+  color: #D8020C;
+  background-color: #FFFFFF;
+  padding: 5px 10px;
+  margin: 10px;
+}
+/* HEADER */
+header section.header-container {
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+}
+header section.header-container span {
+  padding: 20px;
+}
+/* MAIN -> DELETE-BUTTON-ROW */
+main section.template-container section.delete-button-template {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+main section.template-container section.delete-button-template span {
+  padding: 5px 10px;
+  margin: 10px;
+}
+main section.template-container section.delete-button-template span.number {
+  color: #D8020C;
+  background-color: #FFFFFF;
+}
+/* MAIN -> TEXT-INPUT-ROW */
+main section.template-container section.text-input-template div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+main section.template-container section.text-input-template input {
+  font-size: 16px;
+  padding: 5px;
+  border: 0px;
+  min-width: 250px;
+  text-align: center;
+}
+main section.template-container section.text-input-template input:focus {
+  outline: none !important;
+}
+/* MAIN -> TEXT-AREA-ROW */
+main section.template-container section.text-area-template {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main section.template-container section.text-area-template textarea {
+  font-size: 16px;
+  width: 90%;
+  height: 200px;
+  padding: 10px;
+  border: 0px;
+}
+main section.template-container section.text-area-template textarea:focus {
+  outline: none !important;
+}
+/* MAIN -> CHECK-ROW */
+main section.template-container section.check-template {
+  display: flex;
+  flex-direction: column;
+}
+main section.template-container section.check-template div.row {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+main section.template-container section.check-template div.row div.true-false {
+  background-color: #FFFFFF;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section.template-container section.check-template div.row div.true-false p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+main section.template-container section.check-template div.row div.true-false select {
+  color: white;
+  background-color: #D8020C;
+  border: 0;
+  padding: 3px;
+  cursor: pointer;
+}
+main section.template-container section.check-template div.row div.true-false select:focus {
+  outline: none !important;
+}
+/* FOOTER */
+footer section.footer-container {
+  margin-bottom: 30px;
+  align-items: center;
+}
+footer section.footer-container section.sub-footer-container {
+  background-color: #FFFFFF;
+  margin: 10px 5px 20px 5px;
+  padding: 10px;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer section.footer-container section.sub-footer-container section.top-footer, footer section.footer-container section.sub-footer-container section.clients section.client, footer section.footer-container section.sub-footer-container section.bottom-footer section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer section.footer-container section.sub-footer-container section.clients, footer section.footer-container section.sub-footer-container section.bottom-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer section.footer-container section.sub-footer-container section.top-footer div, footer section.footer-container section.sub-footer-container section.clients section.client div, footer section.footer-container section.sub-footer-container section.bottom-footer section div {
+  height: 50px;
+  width: calc((100% - 350px) / 10);
+  border: 1px solid #EEECEC;
+  border-left: none;
+  border-bottom: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer section.footer-container section.sub-footer-container section.top-footer div:first-of-type, footer section.footer-container section.sub-footer-container section.clients section.client div:first-of-type, footer section.footer-container section.sub-footer-container section.bottom-footer section div:first-of-type {
+  width: 200px;
+  border-left: 1px solid #EEECEC;
+}
+footer section.footer-container section.sub-footer-container section.top-footer div:last-of-type, footer section.footer-container section.sub-footer-container section.clients section.client div:last-of-type, footer section.footer-container section.sub-footer-container section.bottom-footer section div:last-of-type {
+  width: 150px;
+}
+footer section.footer-container section.sub-footer-container section.clients section.client div, footer section.footer-container section.sub-footer-container section.bottom-footer section.about-parameters div {
+  font-size: 16px;
+}
+footer section.footer-container section.sub-footer-container section.clients  section.client div:first-of-type {
+  font-size: 12px;
+}
+footer section.footer-container section.sub-footer-container section.bottom-footer section.about-parameters div:first-of-type {
+  font-size: 14px;
+}
+footer section.footer-container section.sub-footer-container section.top-footer div {
+  font-size: 10px;
+}
+footer section.footer-container section.sub-footer-container section.bottom-footer section.remind div {
+  font-size: 10px;
+  border-bottom: 1px solid #EEECEC;
+}
+footer section.footer-container section.sub-footer-container section.top-footer div:first-of-type {
+  border-top-left-radius: 10px;
+  font-size: 14px;
+}
+footer section.footer-container section.sub-footer-container section.top-footer div:last-of-type {
+  border-top-right-radius: 10px;
+  font-size: 14px;
+}
+footer section.footer-container section.sub-footer-container section.bottom-footer section.remind div:first-of-type {
+  border-bottom-left-radius: 10px;
+}
+footer section.footer-container section.sub-footer-container section.bottom-footer section.remind div:last-of-type {
+  border-bottom-right-radius: 10px;
+}
