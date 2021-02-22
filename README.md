@@ -11,3 +11,4 @@ implementazione di un ipotetico programma che permette di generare tante finestr
 
 ![](foto1.jpg)
 ![](foto2.jpg)
+![](clienti.gif)
